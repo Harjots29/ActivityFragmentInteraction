@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:layout_weight="1"
+        android:id="@+id/btnRed"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:id="@+id/btnGreen"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yellow"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:id="@+id/btnYellow"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvCounter"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/btnReset"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+<androidx.fragment.app.FragmentContainerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.harjot.activityfragmentinteraction.BlankFragment"
+    tools:layout="@layout/fragment_blank"
+    android:id="@+id/fragmentContainer"
+    android:layout_marginTop="20dp"/>
+</LinearLayout>
